@@ -1,0 +1,1 @@
+gcc brightness-plugin.c brightness-button.c helpers.c xfpm-brightness.c -shared -o libbrightness.so $(pkg-config --libs --cflags --shared glib-2.0 gtk+-3.0 libxfce4panel-2.0) -std=c11 -Wall -Wextra -Wno-unused-parameter -Wno-pointer-sign -Wno-deprecated-declarations

@@ -1,0 +1,9 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Brightness
+Comment=Control your LCD brightness
+Icon=xfce4-battery-plugin
+X-XFCE-Internal=FALSE
+X-XFCE-Module=brightness
+X-XFCE-API=2.0
