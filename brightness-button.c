@@ -393,13 +393,13 @@ brightness_button_create_popup (BrightnessButton *button)
     
     if ( orientation == GTK_ORIENTATION_VERTICAL )
     {
-	button->priv->range = gtk_hscale_new_with_range (0, max_level, 1);
+	button->priv->range = gtk_hscale_new_with_range (max_level / 100, max_level, 1);
 	gtk_widget_set_size_request (button->priv->range, 100, -1);
         gtk_range_set_inverted (GTK_RANGE(button->priv->range), FALSE);
     }
     else
     {
-	button->priv->range = gtk_vscale_new_with_range (0, max_level, 1);
+	button->priv->range = gtk_vscale_new_with_range (max_level / 100, max_level, 1);
 	gtk_widget_set_size_request (button->priv->range, -1, 100);
         gtk_range_set_inverted (GTK_RANGE(button->priv->range), TRUE);
     }
